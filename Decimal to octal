@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int decimal,a,c,sum=0,n=1;
+ printf("enter the decimal number");
+ scanf("%d",&decimal);
+ while(n!=0)
+ {
+ sum+=(decimal%8)*n;
+ decimal/=8;
+ n*=10;
+  }
+  printf("the octal number is:%d",sum);
+  return 0;
+}
