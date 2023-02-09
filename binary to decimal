@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int binary,a,c,sum=0,n=0;
+ printf("enter the binary number");
+ scanf("%d",&binary);
+ while(binary!=0)
+ {
+  a=binary%10;
+  c=pow(2,n++);
+  sum=sum+(a*c);
+  binary=binary/=10;
+  }
+  printf("the decimal number is:%d",sum);
+  return 0;
+}
