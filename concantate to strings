@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ char st1[100],st2[100];
+
+ printf("Enter string 1 : ");
+ scanf("%s",&st1);
+
+ printf("Enter string 2 : ");
+ scanf("%s",&st2);
+
+ printf("Concantate :  %s%s",st1,st2);
+
+}
