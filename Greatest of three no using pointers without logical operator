@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() 
+{
+    int a,b,c;
+    int *P1,*P2,*P3;
+    printf("Enter the Greatest number:");
+    scanf("%d %d %d",&a,&b,&c );
+    P1=&a;
+    P2=&b;
+    P3=&c;
+    if (*P1>=*P2)
+     {
+         if (*P1>=*P3)
+          printf("Greatest number is:%d",*P1);
+         else
+          printf("Greatest number is:%d",*P3);
+     }  
+    else      
+     {
+         if(*P2>=*P3)
+         printf("Gratest number is:%d",*P2);
+         else
+         printf("Greatest number is:%d",*P3);
+     }
+      return 0;
+}
