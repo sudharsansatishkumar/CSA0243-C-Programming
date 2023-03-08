@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main ()
+{
+ int a,b,c;   
+ int *P1,*P2,*P3;
+ printf("Enter the 1st no:");
+ scanf("%d",&a);
+ 
+ printf("Enter the 2nd no:");
+ scanf("%d",&b);
+ 
+ printf("Enter the 3rd no:");
+ scanf("%d",&c);
+ 
+ P1=&a;
+ P2=&b;
+ P3=&c;
+ if ((*P1>=*P2) && (*P1>=*P3))
+  printf("Greatest number is 1st :%d",*P1);
+ else
+ {
+     if((*P2>=*P1) && (*P2>=*P3))
+      printf("Greatest number is 2nd:%d",*P2);
+     else
+      printf("Greatest number is 3rd:%d",*P3);
+ }
+ return 0;
+}
